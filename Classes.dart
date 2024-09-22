@@ -6,7 +6,7 @@ void main() {
   T2.name = 'Naina';
   T1.subjects = ['English', 'Math'];
   T2.subjects = ['Urdu', 'Islamiyat'];
-  print(T2.canTeach(['English']));
+  print(T2.canTeach('English'));
 }
 
 class Teacher {
@@ -16,6 +16,6 @@ class Teacher {
 
 // method | behavior
   canTeach(subject) {
-    return subjects.any((sub) => subject);
+    return subjects.any((sub) => sub == subject);
   }
 }

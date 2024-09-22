@@ -32,7 +32,7 @@ void main() {
 }
 
 Map<String, dynamic> calculate(data) {
-  int obt_marks = 0;
+  double obt_marks = 0;
   for (var d in data) {
     var values = List.of(d['Subjects'].values);
     obt_marks = values.reduce((sum, element) => sum + element);
